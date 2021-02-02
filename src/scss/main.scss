@@ -1,0 +1,9 @@
+@import "./settings/fonts";
+@import "./settings/colors";
+
+body {
+	font-family: $font-base;
+	background-color: $bckg-color;
+	color: $font-color;
+}
+
