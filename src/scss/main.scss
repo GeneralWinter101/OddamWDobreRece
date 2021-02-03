@@ -1,9 +1,16 @@
 @import "./settings/fonts";
 @import "./settings/colors";
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: $font-base;
 	background-color: $bckg-color;
 	color: $font-color;
+	// display: grid;
+	// gap: 16px;
+	// grid-template-columns: repeat(auto-fill,minmax(120px, 1fr));
 }
 

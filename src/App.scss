@@ -1,0 +1,72 @@
+@import "./scss/main.scss";
+
+.navbar-list {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  grid-template-areas: ". . . . nav1 nav2 nav2 nav3 nav4 nav4 nav5 . ";
+  list-style: none;
+  justify-content: right;
+  padding: 0;
+  margin: 10px 130px 0 130px;
+  width: 100%;
+
+}
+.navbar-list__item {
+  &.nav1 {
+    grid-area: nav1;
+  }
+  &.nav2 {
+    grid-area: nav2;
+  }
+  &.nav3 {
+    grid-area: nav3;
+  }
+  &.nav4 {
+    grid-area: nav4;
+  }
+  &.nav5 {
+    grid-area: nav5;
+  }
+}
+
+.profile-setup {
+  @extend .navbar-list;
+  grid-template-areas: ". . . . . . . . . prof1 prof2 . ";
+  margin: 10px 120px 0 120px;
+}
+.profile__login {
+  grid-area: prof1;
+}
+.profile__signup {
+  grid-area: prof2;
+}
+
+.navbar-list__link {
+  text-decoration: none;
+  font-size: 1em;
+  color: inherit;
+  padding: 9px 20px;
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid $font-color;
+  }
+}
+
+
+.profile__login,
+.profile__signup {
+  @extend .navbar-list__link;
+  font-size: 0.8em;
+  text-align: center;
+  margin: 9px 0 15px 0;
+  padding: 9px 10px;
+  color: $grey-bckg-color;
+  &:hover {
+    border: 1px solid $gold-div-color;
+  }
+}
+
+.link-nav2 {
+  padding-left: 40px;
+}

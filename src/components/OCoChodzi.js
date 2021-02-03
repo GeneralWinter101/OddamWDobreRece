@@ -1,7 +1,12 @@
 import React from "react";
+import Home3Columns from "./start/Home3Columns";
 
 function OCoChodzi() {
-	return <h1>O co chodzi?</h1>
+	return (
+		<div id="purpose">
+			<Home3Columns/>
+		</div>
+	)
 }
 
 
