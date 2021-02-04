@@ -1,0 +1,36 @@
+.homepage-text {
+  grid-area: home2;
+  overflow-y: hidden;
+  margin: 10% auto;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  float: left;
+}
+
+.homepage-title {
+  margin-bottom: 40px;
+}
+
+.homepage-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 36px;
+  color: $font-color;
+  font-weight: lighter;
+  border: 1px solid $font-color;
+  padding: 5px 50px 0;
+  width: 25%;
+  height: 120px;
+  margin: 22px;
+//   &.btn2 {
+// 	  margin-right: 0;
+//   }
+}
