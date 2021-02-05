@@ -1,9 +1,12 @@
 import React from 'react'
+import "../../scss/main.scss";
 
-export default function Login() {
+function Login() {
 	return (
-		<div>
-			Login here...
-		</div>
+		<div id="login">
+			login here...
+			</div>
 	)
 }
+
+export default Login;
