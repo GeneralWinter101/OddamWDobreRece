@@ -1,30 +1,25 @@
 @import "./scss/main.scss";
 
-.homepage-container {
-  display: flex;
+.navbar-container {
+  display: block;
   width: 100%;
   overflow: hidden;
+  margin-bottom: 10px;
+  height: 15vh;
 }
-.homepage-img {
-  flex: 40%;
-  width: 963px;
-  height: auto;
-  margin-left: -270px;
-}
-.homepage-rightside {
-  flex: 60%;
-  width: 50%;
-}
+
 .navbar {
   margin-right: 40px;
+  margin-bottom: 12px;
 }
 .navbar-list {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(7, 105px);
-  grid-template-areas: "nav1 nav2 nav2 nav3 nav4 nav4 nav5 ";
+  grid-template-columns: repeat(12, 105px);
+  grid-template-areas: ". . . . . nav1 nav2 nav2 nav3 nav4 nav4 nav5 ";
   list-style: none;
   text-align: right;
+  margin: 0 120px;
 }
 
 .navbar-list__item {
@@ -48,8 +43,7 @@
 
 .profile-setup {
   @extend .navbar-list;
-  grid-template-areas: ". . . . prof1 prof2 . ";
-  margin: 10px 70px 0 120px;
+  grid-template-areas: ". . . . . . . . . . prof1 prof2 ";
 }
 .profile__login {
   grid-area: prof1;
