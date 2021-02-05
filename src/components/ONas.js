@@ -1,7 +1,7 @@
 import React from "react";
 
 function ONas() {
-	return <h1>O nas</h1>
+	return <h1 id="onas" className="about">O nas</h1>
 }
 
 

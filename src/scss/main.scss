@@ -1,9 +1,14 @@
 @import "./settings/fonts";
 @import "./settings/colors";
+@import "./homeheader";
+@import "./home3columns";
 
-body {
-	font-family: $font-base;
-	background-color: $bckg-color;
-	color: $font-color;
+html {
+  scroll-behavior: smooth;
 }
 
+body {
+  font-family: $font-base;
+  background-color: $bckg-color;
+  color: $font-color;
+}

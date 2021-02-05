@@ -1,7 +1,7 @@
 import React from "react";
 
 function Fundacje() {
-	return <h1>Fundacja i organizacje</h1>
+	return <h1 id="ngos">Fundacja i organizacje</h1>
 }
 
 
