@@ -2,6 +2,7 @@
 @import "./settings/colors";
 @import "./homeheader";
 @import "./home3columns";
+@import "./home4columns";
 
 html {
   scroll-behavior: smooth;
@@ -11,4 +12,5 @@ body {
   font-family: $font-base;
   background-color: $bckg-color;
   color: $font-color;
+  margin: 0;
 }

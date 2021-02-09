@@ -1,7 +1,11 @@
 import React from "react";
 
 function Start() {
-	return <h1>hello</h1>
+	return (
+		<div className="nav-container">
+			
+		</div>
+	)
 }
 
 
