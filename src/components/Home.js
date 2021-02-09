@@ -1,5 +1,5 @@
 import React from 'react';
-// import HomeHeader from "./start/HomeHeader";
+import HomeHeader from "./start/HomeHeader";
 import Home4Columns from "./start/Home4Columns";
 import Fundacje from "./Fundacje";
 import ONas from "./ONas";
@@ -9,7 +9,7 @@ import OCoChodzi from './OCoChodzi';
 function Home() {
 	return (
 		<>
-			{/* <HomeHeader /> */}
+			<HomeHeader />
 			<OCoChodzi />
 			<Home4Columns />
 			<ONas />

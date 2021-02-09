@@ -1,7 +1,20 @@
+.homepage-container {
+  display: flex;
+  height: 85vh;
+}
+
+.homepage-img {
+  flex: 40%;
+  width: 963px;
+  height: auto;
+  margin-left: -270px;
+  margin-top: -80px;
+}
+
 .homepage-text {
   grid-area: home2;
   overflow-y: hidden;
-  margin: 10% auto;
+  margin: 5% auto;
   height: auto;
   width: 100%;
   text-align: center;
@@ -30,7 +43,4 @@
   width: 25%;
   height: 120px;
   margin: 22px;
-//   &.btn2 {
-// 	  margin-right: 0;
-//   }
 }

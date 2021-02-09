@@ -21,10 +21,11 @@
 .navbar-list {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(7, 105px);
-  grid-template-areas: "nav1 nav2 nav2 nav3 nav4 nav4 nav5 ";
+  grid-template-columns: repeat(12, 105px);
+  grid-template-areas: ". . . . . nav1 nav2 nav2 nav3 nav4 nav4 nav5 ";
   list-style: none;
   text-align: right;
+  margin: 0 120px;
 }
 
 .navbar-list__item {
@@ -48,8 +49,7 @@
 
 .profile-setup {
   @extend .navbar-list;
-  grid-template-areas: ". . . . prof1 prof2 . ";
-  margin: 10px 70px 0 120px;
+  grid-template-areas: ". . . . . . . . . . prof1 prof2 ";
 }
 .profile__login {
   grid-area: prof1;

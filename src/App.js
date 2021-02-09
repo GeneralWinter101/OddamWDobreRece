@@ -8,6 +8,7 @@ import {
 import Login from "./components/start/Login";
 import SignUp from "./components/start/SignUp";
 import Home from './components/Home';
+<<<<<<< HEAD
 import HomeHeader from "./components/start/HomeHeader";
 import "./App.scss";
 import "./scss/main.scss";
@@ -51,6 +52,42 @@ function App() {
           <HomeHeader />
 
         </div>
+=======
+import "./App.scss";
+import "./scss/main.scss";
+
+function App() {
+  return (
+    <Router>
+      <div className="navbar-container">
+        <div className="profile-setup">
+          <Link to="/login" className="profile__login">Zaloguj się</Link>
+          <Link to="/signup" className="profile__signup">Załóż konto</Link>
+        </div>
+        <nav className="navbar">
+          <ul className="navbar-list">
+            <li className="navbar-list__item nav1">
+              <Link to="/" className="navbar-list__link">Start</Link>
+            </li>
+            <li className="navbar-list__item nav2">
+
+              <a href="/#purpose" className="navbar-list__link link-nav2">O co chodzi?</a>
+            </li>
+            <li className="navbar-list__item nav3">
+
+              <a href="/#onas" className="navbar-list__link">O nas</a>
+            </li>
+            <li className="navbar-list__item nav4">
+
+              <a href="/#ngos" className="navbar-list__link">Fundacja i organizacje</a>
+            </li>
+            <li className="navbar-list__item nav5">
+
+              <a href="/#contact" className="navbar-list__link">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+>>>>>>> develop
 
       </div>
       <Switch>

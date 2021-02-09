@@ -1,10 +1,9 @@
-import React from 'react';
-// import { Link } from 'react-router-dom';
+import React from 'react'
 
 export default function SignUp() {
 	return (
-		<div>
-			Sign up here...
+		<div id="signup">
+			sign up here...
 		</div>
 	)
 }
