@@ -1,0 +1,38 @@
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $base-color;
+  overflow: hidden;
+  & img {
+    width: auto;
+    height: 754px;
+    margin-right: -20%;
+  }
+}
+
+.about-texbox {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  margin: 100px 152px;
+  & h1 {
+    font-weight: 400;
+    font-size: 38px;
+  }
+  & img {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-left: 200px;
+  }
+}
+
+.about-paragraph {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  font-size: 20px;
+}

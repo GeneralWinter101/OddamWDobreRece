@@ -3,7 +3,7 @@ import "../../scss/main.scss";
 
 function Home3Columns() {
 	return (
-		<div id="purpose" className="tre-col-container">
+		<div className="tre-col-container">
 			<div className="tre-col-column">
 				<div className="tre-col-bignumber">
 					10
