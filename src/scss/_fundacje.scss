@@ -1,0 +1,51 @@
+.fundacje {
+  width: 1300px;
+  margin: 0 auto;
+  font-family: $font-alt;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fundacje-container {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+.fundacje-name {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.fundacje-desc {
+  font-size: 18px;
+}
+
+.fundacje-target {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+hr {
+	margin-bottom: 30px;
+	&:nth-of-type(3) {
+		visibility: hidden;
+	}
+}
+
+.fundacje-numb-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.fundacje-pagenumb {
+	list-style: none;
+	padding: 15px;
+	margin: 15px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	&:hover {
+		border: 1px solid $font-color;
+	}
+}

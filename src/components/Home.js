@@ -1,7 +1,7 @@
 import React from 'react';
 import HomeHeader from "./start/HomeHeader";
 import Home4Columns from "./start/Home4Columns";
-import Fundacje from "./Fundacje";
+import SekcjaPomoc from "./SekcjaPomoc";
 import ONas from "./ONas";
 import Kontakt from "./Kontakt";
 import OCoChodzi from './OCoChodzi';
@@ -13,7 +13,7 @@ function Home() {
 			<OCoChodzi />
 			<Home4Columns />
 			<ONas />
-			<Fundacje />
+			<SekcjaPomoc />
 			<Kontakt />
 		</>
 	)
