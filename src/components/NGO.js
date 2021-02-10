@@ -7,19 +7,34 @@ export class NGO extends React.Component {
 		this.state = {
 			todos: [
 				{
-					name: "Zbiórka “Lorem Ipsum 1””",
+					name: "Organizacja “Lorem Ipsum 1”",
 					description: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
 					target: "Egestas, sed, tempus"
 				},
 				{
-					name: "Zbiórka “Lorem Ipsum 2”",
+					name: "Organizacja “Lorem Ipsum 2”",
 					description: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
 					target: "Ut, aliquam, purus, sit, amet"
 				},
 				{
-					name: "Zbiórka “Lorem Ipsum 3”",
+					name: "Organizacja “Lorem Ipsum 3”",
 					description: "Scelerisque in dictum non consectetur a erat nam.",
 					target: "Mi, quis, hendrerit, dolor"
+				},
+				{
+					name: "Organizacja “Lorem Ipsum 4”",
+					description: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+					target: "Ut, aliquam, purus, sit, amet"
+				},
+				{
+					name: "Organizacja “Lorem Ipsum 5”",
+					description: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+					target: "Ut, aliquam, purus, sit, amet"
+				},
+				{
+					name: "Organizacja “Lorem Ipsum 6”",
+					description: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+					target: "Ut, aliquam, purus, sit, amet"
 				}
 			],
 			currentPage: 1,
@@ -68,7 +83,7 @@ export class NGO extends React.Component {
 
 		const renderPageNumbers = pageNumbers.map(number => {
 			return (
-				<li
+				<li className="fundacje-pagenumb"
 					key={number}
 					id={number}
 					onClick={this.handleClick}
@@ -83,7 +98,7 @@ export class NGO extends React.Component {
 				<ul>
 					{renderTodos}
 				</ul>
-				<ul id="page-numbers">
+				<ul id="page-numbers" className="fundacje-numb-container">
 					{renderPageNumbers}
 				</ul>
 			</div>
