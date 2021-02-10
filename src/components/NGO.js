@@ -1,4 +1,5 @@
 import React from "react";
+import "../scss/main.scss";
 
 export class NGO extends React.Component {
 	constructor() {
@@ -6,40 +7,19 @@ export class NGO extends React.Component {
 		this.state = {
 			todos: [
 				{
-					name: "Fundacja “Dbam o Zdrowie”",
-					description: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej."
+					name: "Zbiórka “Lorem Ipsum 1””",
+					description: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+					target: "Egestas, sed, tempus"
 				},
 				{
-					name: "Fundacja “Dla dzieci”",
-					description: "Cel i misja: Pomoc dzieciom z ubogich rodzin."
+					name: "Zbiórka “Lorem Ipsum 2”",
+					description: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+					target: "Ut, aliquam, purus, sit, amet"
 				},
 				{
-					name: "Fundacja “Bez domu”",
-					description: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania."
-				},
-				{
-					name: "Fundacja “Zdrowie to Podstawa”",
-					description: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej."
-				},
-				{
-					name: "Fundacja “Dzieci niczyje”",
-					description: "Cel i misja: Pomoc dzieciom z domów dziecka."
-				},
-				{
-					name: "Fundacja “Niezamieszkali”",
-					description: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania."
-				},
-				{
-					name: "Fundacja “Przyjazna dłoń”",
-					description: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej."
-				},
-				{
-					name: "Fundacja “Pomoc sąsiedzka”",
-					description: "Cel i misja: Pomoc dla rodzin wielodzietnych w stanie ubóstwa."
-				},
-				{
-					name: "Fundacja “Moje miejsce”",
-					description: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania."
+					name: "Zbiórka “Lorem Ipsum 3”",
+					description: "Scelerisque in dictum non consectetur a erat nam.",
+					target: "Mi, quis, hendrerit, dolor"
 				}
 			],
 			currentPage: 1,
@@ -64,12 +44,18 @@ export class NGO extends React.Component {
 
 		const renderTodos = currentTodos.map((todo, index) => {
 			return (
-				<div >
-					<ul key={index}>
-					<li>{todo.name}</li>
-					<li>{todo.description}</li>
-				</ul>
-				</div>
+				<>
+					<div key={index} id="sub-ngo" className="fundacje">
+						<ul className="fundacje-container">
+							<li className="fundacje-name">{todo.name}</li>
+							<li className="fundacje-desc">{todo.description}</li>
+						</ul>
+						<div className="fundacje-target">
+							{todo.target}
+						</div>
+					</div>
+					<hr></hr>
+				</>
 			)
 
 		});
@@ -93,7 +79,7 @@ export class NGO extends React.Component {
 		});
 
 		return (
-			<div id="sub-ngo">
+			<div >
 				<ul>
 					{renderTodos}
 				</ul>
