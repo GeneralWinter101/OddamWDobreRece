@@ -36,4 +36,16 @@
 }
 
 .quad-col-btn {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 36px;
+  color: $font-color;
+  font-weight: lighter;
+  border: 1px solid $font-color;
+  padding: 5px 50px 0;
+  width: 130px;
+  height: 120px;
+  margin: 0 auto;
 }
