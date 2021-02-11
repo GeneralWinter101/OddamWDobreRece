@@ -94,10 +94,27 @@ button {
   text-align: right;
 }
 
-.footer-container {
-  display: flex;
+// .footer-container {
+//   display: flex;
+//   position: absolute;
+//   bottom: 0;
+//   width: 100%;
+//   flex-shrink: 0;
+// }
+
+#footer {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  flex-shrink: 0;
+  top: 870px;
+  left: 43%;
+  margin: 0 auto;
+}
+
+#fb, #insta {
+  @extend #footer;
+  left: 85%;
+}
+
+#insta {
+  @extend #footer;
+  left: 90%;
 }
