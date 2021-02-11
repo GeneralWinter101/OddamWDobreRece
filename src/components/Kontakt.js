@@ -3,7 +3,6 @@ import { ReactComponent as Decoration } from "../assets/Decoration.svg";
 import Instagram from "../assets/Instagram.svg";
 import Facebook from "../assets/Facebook.svg";
 import { db } from "../firebase";
-// import Background from "../assets/Background-Contact-Form.jpg";
 
 function Kontakt() {
 	const [name, setName] = useState("");

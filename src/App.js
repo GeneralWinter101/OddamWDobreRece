@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Login from "./components/start/Login";
 import SignUp from "./components/start/SignUp";
+import Logout from "./components/start/Logout";
 import Home from './components/Home';
 import "./App.scss";
 import "./scss/main.scss";
@@ -47,6 +48,9 @@ function App() {
       <Switch>
         <Route path="/login">
           <Login />
+        </Route>
+        <Route path="/logout">
+          <Logout />
         </Route>
         <Route path="/signup">
           <SignUp />
