@@ -7,23 +7,35 @@ import Facebook from "../assets/Facebook.svg";
 function Kontakt() {
 	return (
 		<div id="contact" className="contact-container">
-			<div className="contact-bckg">
-			</div>
 			<div className="contact-box">
 				<p>Skontaktuj się z nami</p>
 				<Decoration />
 				<form className="contact-form">
-					<label>Wpisz swoje imię</label>
-					<input type="text" placeholder="Krzysztof"></input>
-					<label>Wpisz swój email</label>
-					<input type="email" placeholder="abc@xyz"></input>
-					<button>Wyślij</button>
+					<div className="contact-form__labels">
+						<label>
+							<p>Wpisz swoje imię</p>
+							<input name="name" placeholder="Krzysztof" className="contact-name" />
+						</label>
+						<label>
+							<p>Wpisz swój email</p>
+							<input type="email" placeholder="abc@xyz" className="contact-email" />
+						</label>
+					</div>
+
+					<label className="contact-text-label">
+						<p>Wpisz swoją wiadomość</p>
+						<textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." className="contact-message">
+						</textarea>
+					</label>
+					<button type="submit" className="contact-btn">Wyślij</button>
 				</form>
 			</div>
+			<div className="footer-container">
+				<p>Copyright by Coders Lab</p>
+				<img src={Facebook} alt="Facebook" />
+				<img src={Instagram} alt="Instagram" />
+			</div>
 
-			<footer>Copyright by Coders Lab</footer>
-			<img src={Facebook} alt="Facebook" />
-			<img src={Instagram} alt="Instagram" />
 		</div>
 
 	)
